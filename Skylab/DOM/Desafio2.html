@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>trabalhando com o dom</title>
+</head>
+<body>
+    <div id = "app">
+        <button class="botao">Me aperta!</button>
+        <div class="box"></div>
+        
+    </div>
+
+
+    <script>
+        var btnElemete = document.querySelector('button.botao') //vai no botão classe botão
+        
+        btnElemete.onclick = function(){
+        var boxElement = document.querySelector('.box')
+
+            boxElement.style.marginTop = '50px'
+            boxElement.style.width = '100px'
+            boxElement.style.height = '100px'
+            boxElement.style.backgroundColor = 'blue'
+        }
+        var boxElement = document.querySelector('.box')
+        boxElement.onmouseover = function(){
+            var letters = "0123456789ABCDEF";
+            var color = "#";
+            for (var i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+            }
+            boxElement.style.backgroundColor = color
+        } 
+    </script> 
+</body>
+</html>

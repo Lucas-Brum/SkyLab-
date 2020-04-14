@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>trabalhando com o dom</title>
+</head>
+<body>
+    <div id="app">
+        <input type="text" name = "nome" id="nome"/>
+      <!--  <input type="text" name = "nome" id="nome2"/>
+        <input type="text" name = "nome" class="nome2"/>
+        <input type="text" name = "nome" class="nome2"/>-->
+        <button class="botao">Adicionar</button>
+    </div>
+
+    </div>
+    <script>
+
+        //////////////////////////xxxxxxxxxxxxxxxxxxxxxxxxx////////////////////////////////////
+
+      // var inputElemente = document.getElementById('nome')
+
+       // var inputElemente2 = document.getElementsByTagName('nome')[0] // pode ter ou n o 0
+
+        //var inputElemente3 = document.getElementsByClassName('nome2')[0]// esses 0 indentifica qual class ou tag
+        
+        /////////////////////////xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx////////////////////////////
+
+        // agora query selecctor selciona só um elemento a n ser q seja query selector all
+        
+       // var inputElemente4 = document.querySelector('div#app input')// referencia a taga input dentro da div
+        
+        var inputElemente5 = document.querySelector('input[name=nome]')// referencia o nome do input
+        
+        /////////////////////////xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx//////////////////////////
+       
+        // query selecctor em botões
+        var btnElemete = document.querySelector('button.botao') //vai no botão classe botão
+        
+        btnElemete.onclick = function(){ //executa a função que esta no botão
+            var text = inputElemente5.value;
+            alert(text)
+        }
+
+        /////////////////////////////xxxxxxxxxxxxxx///////////////////////////////////
+        
+        // Mostrando resultados no console
+        
+       // console.log(inputElemente)
+       // console.log(inputElemente2)
+       //console.log(inputElemente3)
+       // console.log(inputElemente4)
+       // console.log(inputElemente5)
+    </script> 
+</body>
+</html>

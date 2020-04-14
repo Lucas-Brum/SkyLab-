@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>trabalhando com o dom</title>
+</head>
+<body>
+    <div id = "app">
+                
+    </div>
+
+
+    <script>
+        var nome = ["Diego","Luis","Lucas"]
+        var criaUl = document.createElement('lu')
+        var criaLista1 = document.createElement('li')
+        var criaLista2 = document.createElement('li')
+        var criaLista3 = document.createElement('li')
+        var textElement1 = document.createTextNode(nome[0])
+        var textElement2 = document.createTextNode(nome[1])
+        var textElement3 = document.createTextNode(nome[2])
+        var idApp = document.querySelector('#app')
+        idApp.appendChild(criaUl)
+        criaUl.appendChild(criaLista1)
+        criaUl.appendChild(criaLista2)
+        criaUl.appendChild(criaLista3)
+        criaLista1.appendChild(textElement1)
+        criaLista2.appendChild(textElement2)
+        criaLista3.appendChild(textElement3)
+    </script> 
+</body>
+</html>

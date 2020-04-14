@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>trabalhando com o dom</title>
+</head>
+<body>
+    <div id = "app">
+        <input id = "nome" />
+    </div>
+
+
+    <script>
+        var linkElement = document.createElement('a');// cria o elemento <a>
+        linkElement.setAttribute('href', 'https://rocketseat.com.br/') //coloca o atributo href
+        
+        
+        var textElement = document.createTextNode( 'Acessar site da roquet seat') // cria um texto
+        linkElement.appendChild(textElement) // coloca o elemento dento da tag <a>
+
+
+        var containerElement = document.querySelector('#app')// linka a div com id app na variavel container elemente
+        containerElement.appendChild(linkElement) //coloca a tag <a> crianda anteriormente dentro da div com id app
+
+        ////////////////////xxxxxxxxxxxxx//////////////////
+        var inputElement = document.querySelector('#nome')//linka a tag nome a variavel inputelement 
+        containerElement.removeChild(inputElement);// remove a tag input linkcada a inputelement do html 
+
+    </script> 
+</body>
+</html>

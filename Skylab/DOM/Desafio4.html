@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>trabalhando com o dom</title>
+</head>
+<body>
+    <div id = "app">
+        <input type="Text" name="nome" id="nome">
+        <button class="botao">Adicionar</button>        
+    </div>
+
+
+    <script>
+
+        var criaUl = document.createElement('lu')
+
+
+        var idApp = document.querySelector('#app')
+        var btnelemento = document.querySelector('.botao')
+        idApp.appendChild(criaUl)
+
+
+        btnelemento.onclick = function(){
+            var criaLista4 = document.createElement('li')
+            pegatexto = document.querySelector('input')
+            nome[3] = pegatexto.value
+            var textElement4 = document.createTextNode(nome[3])
+            criaUl.appendChild(criaLista4)
+            criaLista4.appendChild(textElement4)
+
+        }
+    </script> 
+</body>
+</html>
